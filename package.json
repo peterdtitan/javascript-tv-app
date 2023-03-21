@@ -4,7 +4,9 @@
   "description": "- [📖 About the Project](#about-project)   - [🛠 Built With](#built-with)     - [Tech Stack](#tech-stack)     - [Key Features](#key-features) - [💻 Getting Started](#getting-started)   - [Setup](#setup)   - [Prerequisites](#prerequisites) - [👥 Authors](#authors) - [🔭 Future Features](#future-features) - [🤝 Contributing](#contributing) - [⭐️ Show your support](#support) - [📝 License](#license)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,24 @@
   "bugs": {
     "url": "https://github.com/peterdtitan/javascript-tv-app/issues"
   },
-  "homepage": "https://github.com/peterdtitan/javascript-tv-app#readme"
+  "homepage": "https://github.com/peterdtitan/javascript-tv-app#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
