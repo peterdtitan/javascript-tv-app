@@ -2,8 +2,7 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { appHeader } from '../module/header';
 import './style.css';
-import MoviesAPI from '../module/movies_api';
+import exteralApicall from '../module/renderMovies';
 
-// MoviesAPI.getMovies().then((value) => console.log(value));
-
+exteralApicall();
 appHeader();

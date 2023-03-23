@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +9,7 @@ html {
 }
 
 body {
-  font-family: "League Spartan", sans-serif;
-  margin-inline: 10%;
-  background-color: antiquewhite;
+  font-family: cursive, sans-serif;
 }
 
 .header {
@@ -26,59 +22,47 @@ body {
 }
 
 .header img {
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
 }
 
-#movie-list {
-  margin: 30px 0 100px;
+.movies {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 4rem;
-  gap: 2rem;
+  gap: 3rem;
+  max-width: 107rem;
+  margin: 0 auto;
 }
 
-.movie-card {
-  color: white;
-  width: 270px;
-}
-
-.movie-background {
-  background-color: rgb(109, 21, 21);
-  border-radius: 10px;
-  padding: 30px;
+#model-container {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 80vh;
+  width: 50vw;
+  padding: 2.8rem;
+  border: 0.1rem solid #000;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 270px;
-  width: 270px;
-  box-shadow: 5px 8px rgba(56, 36, 36, 0.3);
+  align-items: center;
 }
 
-.watch-cta {
-  background-color: rgba(255, 255, 255, 0.481);
-  border: none;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin-top: 15rem;
-  cursor: pointer;
-  border-radius: 10px;
+.row {
+  display: flex;
+  gap: 8rem;
+  margin-top: 1.3rem;
+  font-size: 1.4rem;
 }
 
-.watch-cta:hover {
-  background-color: rgb(255, 255, 255);
+.close-btn {
+  height: 2rem;
+  width: 2rem;
+  justify-self: flex-end;
 }
 
-footer a {
-  margin: 5px;
-}
-
-footer p {
-  padding: 0;
-  margin: 0;
+.none {
+  display: none;
 }
