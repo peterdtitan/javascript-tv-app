@@ -10,7 +10,7 @@ export const exteralApicall = async () => {
         <button class="watch-cta">Watch Now</button>
     </div>
     <div class="movie-body">
-        <h2 class="movie-title">${item.show.name.length > 20 ? item.show.name.slice(0, 20) + '...' : item.show.name}</h2>
+        <h2 class="movie-title">${item.show.name.length > 20 ? `${item.show.name.slice(0, 20)} + '...'` : item.show.name}</h2>
         <button id="comment-btn">Comments</button>
         <p id="movie-description">Lorem ipsum sjdfd sfjsjdsksd sdjfdkfsdf dsfjsdf</p>
     </div>
