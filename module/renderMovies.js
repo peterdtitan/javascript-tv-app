@@ -17,7 +17,6 @@ export const exteralApicall = async () => {
   </div>
 `);
   renderMovies.innerHTML = movieHTML;
-
 };
 
 export default exteralApicall;
