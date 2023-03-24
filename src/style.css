@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: cursive, sans-serif;
+  font-family: cursive, serif;
 }
 
 .header {
@@ -185,4 +185,23 @@ body {
   gap: 6rem;
   font-size: 1.3rem;
   margin-top: 1.2rem;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
