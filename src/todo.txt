@@ -1,8 +1,0 @@
-            <div class="movie-card">
-                <div class="movie-background" style="background-image: url('https://flxt.tmsimg.com/assets/p9621445_b_v8_ae.jpg'); background-position: center; background-size: cover;">
-                    <button class="watch-cta">Watch Now</button>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis itaque beatae impedit placeat mollitia, quo incidunt vel tenetur voluptate animi error porro aliquam dolorem veniam numquam cumque? Cum, culpa nisi?</p>
-                </div>
-            </div>
