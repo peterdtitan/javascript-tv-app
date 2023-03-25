@@ -49,8 +49,8 @@ header {
 
 #movie-list {
   max-width: 100rem;
-  margin: 0 auto;
   margin-top: 12rem;
+  margin-left: 17%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
