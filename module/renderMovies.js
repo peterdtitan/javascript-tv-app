@@ -15,7 +15,6 @@ export const exteralApicall = async () => {
     </div>
     <div class="movie-body">
         <h2 class="movie-title">${item.show.name.length > 20 ? `${item.show.name.slice(0, 20)}...` : item.show.name}</h2>
-
         <div class="interactions">
           <div class="likes">
             <p class="total-likes" data-show="${item.show.id}"></p>

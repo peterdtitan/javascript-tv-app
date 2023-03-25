@@ -10,19 +10,24 @@ export default class InvolvementAPI {
       likeBtn.forEach((btn) => {
         btn.addEventListener('click', async () => {
           const id = btn.dataset.show;
-          const movie = await fetch(`${this.baseURL}/${this.appID}/likes/`, {
-            method: 'POST',
-            body: JSON.stringify({
-              item_id: id,
-            }),
-            headers: {
-              'Content-type': 'application/json; charset=UTF-8',
-            },
-          }).then((response) => response.status === 201);
+          if (btn.innerHTML === 'Liked this') {
+            // eslint-disable-next-line no-alert
+            alert('Already liked this!');
+          } else {
+            const movie = await fetch(`${this.baseURL}/${this.appID}/likes/`, {
+              method: 'POST',
+              body: JSON.stringify({
+                item_id: id,
+              }),
+              headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+              },
+            }).then((response) => response.status === 201);
 
-          if (movie) {
-            btn.innerHTML = 'Liked this';
-            await this.updateLikes();
+            if (movie) {
+              btn.innerHTML = 'Liked this';
+              await this.updateLikes();
+            }
           }
         });
       });
