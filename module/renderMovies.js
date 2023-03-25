@@ -30,7 +30,7 @@ export const exteralApicall = async () => {
   renderMovies.innerHTML = movieHTML;
 
   await CommentsPopup.getMovie();
-  await InvolvementAPI.likeMovie()
+  await InvolvementAPI.likeMovie();
 
   const totalLikes = document.querySelectorAll('.total-likes');
   totalLikes.forEach(async (like) => {
